@@ -6,10 +6,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else 
     current = "The line is currently:"
-    #current = ["The line is currently:"]
     katz_deli.each_with_index { |i, index| 
-      #current.push(" #{index+1}. #{i}") }
-    #puts current.join("")
+      current += " #{index+1}. #{i}"
+    puts current 
   end 
 end 
 
