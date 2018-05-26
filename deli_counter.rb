@@ -8,6 +8,7 @@ def line(katz_deli)
     current = ["The line is currently:"]
     katz_deli.each_with_index { |i, index| 
       current.push(" #{index+1}. #{i}") }
+    puts current 
     #puts current.join("")
   end 
 end 
